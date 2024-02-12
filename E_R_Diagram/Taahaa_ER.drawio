@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-12T20:37:10.368Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="s5OwH2_SQUWLGxnIlYgx" version="23.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-12T20:49:12.354Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="w-iDLwHLqh5znXxpW2y2" version="23.1.2" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="2417" dy="837" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -355,8 +355,8 @@
             <mxPoint x="350" y="1450" as="sourcePoint" />
             <mxPoint x="510" y="1450" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="350" y="1490" />
-              <mxPoint x="250" y="1490" />
+              <mxPoint x="350" y="1520" />
+              <mxPoint x="250" y="1520" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -396,6 +396,77 @@
         </mxCell>
         <mxCell id="zfA8GvS_sk62KVz_93GT-118" value="can be a part of" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="290" y="1300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zfA8GvS_sk62KVz_93GT-121" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zfA8GvS_sk62KVz_93GT-123" target="zfA8GvS_sk62KVz_93GT-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="1350" as="sourcePoint" />
+            <mxPoint x="460" y="1350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-800" y="560" />
+              <mxPoint x="-800" y="1280" />
+              <mxPoint x="-360" y="1280" />
+              <mxPoint x="-360" y="1440" />
+              <mxPoint x="-160" y="1440" />
+              <mxPoint x="-160" y="1560" />
+              <mxPoint x="80" y="1560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zfA8GvS_sk62KVz_93GT-122" value="N" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="zfA8GvS_sk62KVz_93GT-121">
+          <mxGeometry x="1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zfA8GvS_sk62KVz_93GT-124" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="zfA8GvS_sk62KVz_93GT-38" target="zfA8GvS_sk62KVz_93GT-123">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="760" as="sourcePoint" />
+            <mxPoint x="80" y="1440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="105" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zfA8GvS_sk62KVz_93GT-123" value="can belong to" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-440" y="520" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zfA8GvS_sk62KVz_93GT-126" value="" style="endArrow=none;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zfA8GvS_sk62KVz_93GT-128" target="zfA8GvS_sk62KVz_93GT-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="1861.6666666666667" as="sourcePoint" />
+            <mxPoint x="-100" y="1310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="512" y="1870" />
+              <mxPoint x="100" y="1870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zfA8GvS_sk62KVz_93GT-127" value="1" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="zfA8GvS_sk62KVz_93GT-126">
+          <mxGeometry x="1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zfA8GvS_sk62KVz_93GT-129" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zfA8GvS_sk62KVz_93GT-64" target="zfA8GvS_sk62KVz_93GT-128">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="495" y="1110" as="sourcePoint" />
+            <mxPoint x="130" y="1440" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zfA8GvS_sk62KVz_93GT-128" value="associated with a single" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1540" width="184" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zfA8GvS_sk62KVz_93GT-131" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zfA8GvS_sk62KVz_93GT-133" target="zfA8GvS_sk62KVz_93GT-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="1540" as="sourcePoint" />
+            <mxPoint x="190" y="1540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zfA8GvS_sk62KVz_93GT-132" value="N" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="zfA8GvS_sk62KVz_93GT-131">
+          <mxGeometry x="1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zfA8GvS_sk62KVz_93GT-134" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zfA8GvS_sk62KVz_93GT-47" target="zfA8GvS_sk62KVz_93GT-133">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="1440" as="sourcePoint" />
+            <mxPoint x="200" y="1550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zfA8GvS_sk62KVz_93GT-133" value="associated&lt;br&gt;with" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1465" width="100" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,6 +1,10 @@
 <mxfile host="65bd71144e">
     <diagram id="CGE-V-YyImQBMw3J6Rf1" name="Page-1">
+<<<<<<< HEAD
+        <mxGraphModel dx="3345" dy="1862" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+=======
         <mxGraphModel dx="2365" dy="1519" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+>>>>>>> b9e36d7603ad1bb38d513e9f4fe173522c51844a
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -993,6 +997,11 @@
                 <mxCell id="341" value="delivery_id" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
                     <mxGeometry x="-48" y="-400" width="120" height="47" as="geometry"/>
                 </mxCell>
+<<<<<<< HEAD
+                <mxCell id="353" value="ALTERNATIVE: Address as a separate attribute" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="-331" y="-800" width="384" height="30" as="geometry"/>
+                </mxCell>
+=======
                 <mxCell id="358" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" parent="1" source="357" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="-140" y="760" as="targetPoint"/>
@@ -1022,6 +1031,7 @@
                 <mxCell id="370" value="customer can have a shopping cart but no order" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;dashPattern=8 8;fontSize=12;" vertex="1" parent="1">
                     <mxGeometry x="-55" y="583.5" width="145" height="71.5" as="geometry"/>
                 </mxCell>
+>>>>>>> b9e36d7603ad1bb38d513e9f4fe173522c51844a
             </root>
         </mxGraphModel>
     </diagram>

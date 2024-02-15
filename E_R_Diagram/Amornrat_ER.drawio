@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-14T13:08:32.842Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="hvOPoza4-E_ujLa4Zdj2" version="23.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-15T19:04:28.778Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="mvSaQuGIRfE9cSbSwelQ" version="23.1.2" type="github">
   <diagram name="Page-1" id="ivrqiA3PI_ZQujy4Wrm9">
-    <mxGraphModel dx="2683" dy="1845" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="2106" dy="1457" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -365,7 +365,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GLYRe_VKkiP-eNtGVK_R-183" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Order_Details_ID&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+        <mxCell id="GLYRe_VKkiP-eNtGVK_R-183" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Order_ID&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="1046" y="320" width="124" height="45" as="geometry" />
         </mxCell>
         <mxCell id="GLYRe_VKkiP-eNtGVK_R-185" value="Sale_Quantity" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
@@ -374,7 +374,7 @@
         <mxCell id="GLYRe_VKkiP-eNtGVK_R-186" value="Sale_Price" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="1357" y="290" width="124" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="GLYRe_VKkiP-eNtGVK_R-187" value="Customer_Name" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="GLYRe_VKkiP-eNtGVK_R-187" value="Customer_Name" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="1201" y="340" width="124" height="40" as="geometry" />
         </mxCell>
         <mxCell id="GLYRe_VKkiP-eNtGVK_R-189" value="Total_Amount_Sale" style="ellipse;whiteSpace=wrap;html=1;align=center;dashed=1;" parent="1" vertex="1">
@@ -415,9 +415,6 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GLYRe_VKkiP-eNtGVK_R-196" value="Order_Number" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
-          <mxGeometry x="1341" y="350" width="124" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="GLYRe_VKkiP-eNtGVK_R-197" value="Order_Quantity" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="1341" y="-10" width="111" height="40" as="geometry" />
         </mxCell>
@@ -428,7 +425,7 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GLYRe_VKkiP-eNtGVK_R-199" value="Product_ID" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="GLYRe_VKkiP-eNtGVK_R-199" value="Product_ID" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="1287" y="180" width="124" height="40" as="geometry" />
         </mxCell>
         <mxCell id="GLYRe_VKkiP-eNtGVK_R-200" value="" style="endArrow=none;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="GLYRe_VKkiP-eNtGVK_R-199" target="GLYRe_VKkiP-eNtGVK_R-5" edge="1">
@@ -455,23 +452,6 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1132" y="20" as="sourcePoint" />
             <mxPoint x="1197" y="-40" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="GLYRe_VKkiP-eNtGVK_R-206" value="Order_Number" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
-          <mxGeometry x="1268" y="40" width="111" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="GLYRe_VKkiP-eNtGVK_R-207" value="" style="endArrow=none;html=1;rounded=0;exitX=0.441;exitY=-0.025;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="GLYRe_VKkiP-eNtGVK_R-206" target="GLYRe_VKkiP-eNtGVK_R-4" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1367" y="6" as="sourcePoint" />
-            <mxPoint x="1297" y="-20" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="GLYRe_VKkiP-eNtGVK_R-208" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="GLYRe_VKkiP-eNtGVK_R-196" target="GLYRe_VKkiP-eNtGVK_R-5" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1327" y="49" as="sourcePoint" />
-            <mxPoint x="1272" as="targetPoint" />
             <Array as="points" />
           </mxGeometry>
         </mxCell>
@@ -631,12 +611,6 @@
             <mxPoint x="-30" y="-20" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GLYRe_VKkiP-eNtGVK_R-255" value="FK&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1317" y="90" width="71" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="GLYRe_VKkiP-eNtGVK_R-256" value="FK&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1366.5" y="400" width="71" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="GLYRe_VKkiP-eNtGVK_R-257" value="Category_ID" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="836.25" y="340" width="100.5" height="40" as="geometry" />
         </mxCell>
@@ -663,11 +637,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="GLYRe_VKkiP-eNtGVK_R-263" value="1" style="resizable=0;html=1;whiteSpace=wrap;align=left;verticalAlign=bottom;" parent="GLYRe_VKkiP-eNtGVK_R-262" connectable="0" vertex="1">
+        <mxCell id="GLYRe_VKkiP-eNtGVK_R-263" value="M" style="resizable=0;html=1;whiteSpace=wrap;align=left;verticalAlign=bottom;" parent="GLYRe_VKkiP-eNtGVK_R-262" connectable="0" vertex="1">
           <mxGeometry x="-1" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GLYRe_VKkiP-eNtGVK_R-264" value="1" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="GLYRe_VKkiP-eNtGVK_R-262" connectable="0" vertex="1">
-          <mxGeometry x="1" relative="1" as="geometry" />
+        <mxCell id="GLYRe_VKkiP-eNtGVK_R-264" value="N" style="resizable=0;html=1;whiteSpace=wrap;align=right;verticalAlign=bottom;" parent="GLYRe_VKkiP-eNtGVK_R-262" connectable="0" vertex="1">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="GLYRe_VKkiP-eNtGVK_R-265" value="contains" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#dae8fc;strokeColor=#07090D;" parent="1" vertex="1">
           <mxGeometry x="526" y="-320" width="120" height="60" as="geometry" />
@@ -722,7 +698,7 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GLYRe_VKkiP-eNtGVK_R-282" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Ads_Number&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+        <mxCell id="GLYRe_VKkiP-eNtGVK_R-282" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Ads_ID&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
           <mxGeometry x="566.5" y="670" width="85" height="40" as="geometry" />
         </mxCell>
         <mxCell id="GLYRe_VKkiP-eNtGVK_R-283" value="" style="endArrow=none;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="GLYRe_VKkiP-eNtGVK_R-282" edge="1">

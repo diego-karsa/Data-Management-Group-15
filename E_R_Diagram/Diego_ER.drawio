@@ -1,11 +1,14 @@
 <mxfile host="65bd71144e">
     <diagram id="CGE-V-YyImQBMw3J6Rf1" name="Page-1">
-        <mxGraphModel dx="1445" dy="772" grid="0" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1138" dy="1218" grid="0" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="2" value="Customer" style="whiteSpace=wrap;html=1;align=center;rounded=1;" parent="1" vertex="1">
                     <mxGeometry x="-144" y="728" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="192" value="1" style="edgeStyle=none;html=1;endArrow=none;endFill=0;exitX=0;exitY=0;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="3" target="191">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="Product" style="whiteSpace=wrap;html=1;align=center;rounded=1;arcSize=28;" parent="1" vertex="1">
                     <mxGeometry x="253" y="390" width="100" height="40" as="geometry"/>
@@ -511,6 +514,15 @@
                 </mxCell>
                 <mxCell id="185" value="supplier_zipcode" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;" vertex="1" parent="1">
                     <mxGeometry x="31" y="-119" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="193" value="N" style="edgeStyle=none;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="190" target="191">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="190" value="Reviews" style="whiteSpace=wrap;html=1;align=center;rounded=1;arcSize=28;" vertex="1" parent="1">
+                    <mxGeometry x="-144" y="-35" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="191" value="has" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="34" y="132" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

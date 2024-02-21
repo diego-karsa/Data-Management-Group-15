@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="CGE-V-YyImQBMw3J6Rf1" name="Page-1">
-        <mxGraphModel dx="2406" dy="1686" grid="0" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1102" dy="850" grid="0" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -263,7 +263,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="89" value="is paid by" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;rounded=1;" parent="1" vertex="1">
-                    <mxGeometry x="450" y="719" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="463" y="719" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="90" value="" style="endArrow=none;html=1;rounded=0;dashed=1;dashPattern=1 2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="89" target="6" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -296,8 +296,8 @@
                         <mxPoint x="1080" y="513" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="99" value="&lt;div&gt;1 order can be paid &lt;br&gt;by many payments&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="445" y="671" width="124" height="41" as="geometry"/>
+                <mxCell id="99" value="&lt;div&gt;1 order can be paid &lt;br&gt;by many payments.&lt;br&gt;Assumption: the customer who&lt;br&gt;made the order is the one who pays&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="422" y="645" width="204" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="108" value="&lt;u&gt;ad_id&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
                     <mxGeometry x="-301" y="328" width="100" height="40" as="geometry"/>
@@ -336,12 +336,6 @@
                 <mxCell id="123" value="One product can &lt;br&gt;have one ad" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="-39" y="336.5" width="108" height="41" as="geometry"/>
                 </mxCell>
-                <mxCell id="125" value="makes" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;rounded=1;" parent="1" vertex="1">
-                    <mxGeometry x="276" y="1408" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="136" value="&lt;div&gt;A customer can make&lt;/div&gt;&lt;div&gt;many payments&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="267.5" y="1479" width="137" height="41" as="geometry"/>
-                </mxCell>
                 <mxCell id="141" value="product_id" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;rounded=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
                     <mxGeometry x="-230.5" y="280" width="100" height="40" as="geometry"/>
                 </mxCell>
@@ -349,20 +343,6 @@
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="143" y="511" as="sourcePoint"/>
                         <mxPoint x="303" y="511" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="143" value="" style="endArrow=none;html=1;rounded=0;dashed=1;dashPattern=1 2;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="125" target="6" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="201" y="688" as="sourcePoint"/>
-                        <mxPoint x="361" y="688" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="830" y="1438"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="144" value="N" style="resizable=0;html=1;align=right;verticalAlign=bottom;" parent="143" connectable="0" vertex="1">
-                    <mxGeometry x="1" relative="1" as="geometry">
-                        <mxPoint x="-6" y="23" as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="148" value="order_id" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;rounded=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
@@ -586,28 +566,8 @@
                 <mxCell id="265" value="Each address has shipping details&lt;br&gt;based on its post_code" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="405" y="1056.5" width="210" height="41" as="geometry"/>
                 </mxCell>
-                <mxCell id="266" value="" style="endArrow=none;html=1;rounded=0;dashed=1;dashPattern=1 2;strokeColor=default;fontSize=10;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="125" target="2" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="272" y="974" as="sourcePoint"/>
-                        <mxPoint x="432" y="974" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="-167" y="1440"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="267" value="1" style="resizable=0;html=1;align=right;verticalAlign=bottom;rounded=1;shadow=0;sketch=0;fontSize=10;" parent="266" connectable="0" vertex="1">
-                    <mxGeometry x="1" relative="1" as="geometry">
-                        <mxPoint x="-8" y="22" as="offset"/>
-                    </mxGeometry>
-                </mxCell>
                 <mxCell id="269" value="payment_status" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
                     <mxGeometry x="898" y="649" width="100" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="274" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=default;fontSize=10;endArrow=none;endFill=0;" parent="1" source="272" target="6" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="272" value="payment_" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-                    <mxGeometry x="913" y="696" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="275" value="Address" style="whiteSpace=wrap;html=1;align=center;rounded=1;" parent="1" vertex="1">
                     <mxGeometry x="253" y="1123" width="100" height="40" as="geometry"/>

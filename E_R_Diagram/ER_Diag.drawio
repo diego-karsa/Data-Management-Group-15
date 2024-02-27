@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="CGE-V-YyImQBMw3J6Rf1" name="Page-1">
-        <mxGraphModel dx="6385" dy="2495" grid="0" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2662" dy="1098" grid="0" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -114,7 +114,7 @@
                         <mxPoint x="1168" y="798.67" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="64" value="&lt;div&gt;customer_id&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;rounded=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                <mxCell id="64" value="&lt;div&gt;customer_id&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
                     <mxGeometry x="146" y="907" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="66" value="supplied by" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;rounded=1;" parent="1" vertex="1">
@@ -252,7 +252,7 @@
                 <mxCell id="403" style="edgeStyle=none;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="148" target="6" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="148" value="order_id" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;rounded=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                <mxCell id="148" value="order_id" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
                     <mxGeometry x="637" y="689" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="151" value="is child of" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;rounded=1;shadow=0;" parent="1" vertex="1">
@@ -341,10 +341,10 @@
                         <mxPoint x="303" y="768" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="176" value="&lt;div&gt;total_amount&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+                <mxCell id="176" value="&lt;div&gt;total_amount&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
                     <mxGeometry x="56" y="809" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="177" value="&lt;div&gt;order_date&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+                <mxCell id="177" value="&lt;div&gt;order_date&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
                     <mxGeometry x="43" y="755" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="392" style="edgeStyle=none;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="205" target="317" edge="1">
@@ -444,35 +444,20 @@
                 <mxCell id="269" value="payment_status" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
                     <mxGeometry x="941" y="722" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="388" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" parent="1" source="283" target="2" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
                 <mxCell id="283" value="&lt;div&gt;country&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-                    <mxGeometry x="-143" y="845" width="100" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="383" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" parent="1" source="284" target="2" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry x="-195" y="964" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="284" value="&lt;div&gt;unit&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-                    <mxGeometry x="-443" y="637" width="100" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="384" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="285" target="2" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry x="-495" y="756" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="285" value="&lt;div&gt;city&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-                    <mxGeometry x="-445" y="703" width="100" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="386" style="edgeStyle=none;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="286" target="2" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry x="-497" y="822" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="286" value="&lt;div&gt;street&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-                    <mxGeometry x="-375" y="842" width="100" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="387" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" parent="1" source="287" target="2" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                    <mxGeometry x="-427" y="961" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="287" value="&lt;div&gt;block&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-                    <mxGeometry x="-256" y="867" width="100" height="40" as="geometry"/>
+                    <mxGeometry x="-308" y="986" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="310" value="assume 1 customer only has 1 address" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="-702" y="739" width="227" height="26" as="geometry"/>
@@ -488,11 +473,8 @@
                 <mxCell id="317" value="Order" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;rounded=1;" parent="1" vertex="1">
                     <mxGeometry x="243" y="712" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="385" style="edgeStyle=none;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="318" target="2" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
                 <mxCell id="318" value="&lt;div&gt;floor&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-                    <mxGeometry x="-434" y="775" width="100" height="40" as="geometry"/>
+                    <mxGeometry x="-486" y="894" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="321" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" parent="1" source="320" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -502,7 +484,7 @@
                 <mxCell id="320" value="date_of_birth" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
                     <mxGeometry x="-386" y="579" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="329" value="delivery_time" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+                <mxCell id="329" value="delivery_time" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;dashed=1;" parent="1" vertex="1">
                     <mxGeometry x="329" y="907" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="603" style="edgeStyle=none;html=1;entryX=0.589;entryY=0.892;entryDx=0;entryDy=0;endArrow=none;endFill=0;entryPerimeter=0;" edge="1" parent="1" source="330" target="317">
@@ -523,11 +505,8 @@
                 <mxCell id="345" value="&lt;div&gt;discounted_price&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
                     <mxGeometry x="363" y="466" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="389" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" parent="1" source="350" target="2" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
                 <mxCell id="350" value="&lt;div&gt;zipcode&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-                    <mxGeometry x="-96" y="780" width="100" height="40" as="geometry"/>
+                    <mxGeometry x="-148" y="899" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="364" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="352" target="7" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -606,8 +585,14 @@
                 <mxCell id="601" value="&lt;div&gt;1 order can be paid by card ONLY&lt;/div&gt;&lt;div&gt;must be paid in 1 transaction&lt;br&gt;Assumption: the customer who&lt;br&gt;made the order is the one who pays&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="419" y="666" width="209" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="606" value="company only uses 1 courier (its own)&lt;br&gt;shippingcost only depends on delivery type (e.g. standard, premium), not the delivery address. We assume that cost of delivery type is fixed for whole nation-wide delivery.&lt;br&gt;delivery status depends on delivery time (e.g. in transit)&lt;br&gt;Delivery time depends on delivery type." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="-152" y="961.5" width="923" height="70" as="geometry"/>
+                <mxCell id="606" value="company only uses 1 courier (its own)&lt;br&gt;shippingcost only depends on delivery type (e.g. standard, premium), not the delivery address. We assume that cost of delivery type is fixed for whole nation-wide delivery.&lt;br&gt;delivery status depends on delivery time (e.g. dispatched, in transit, delivered, returned)&lt;br&gt;Delivery time depends on delivery type." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="-68" y="967" width="923" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="608" style="edgeStyle=none;html=1;entryX=0.364;entryY=1.102;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" edge="1" parent="1" source="607" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="607" value="address" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+                    <mxGeometry x="-316" y="816" width="100" height="40" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

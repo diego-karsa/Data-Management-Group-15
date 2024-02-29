@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="CGE-V-YyImQBMw3J6Rf1" name="Page-1">
-        <mxGraphModel dx="2153" dy="841" grid="0" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2204" dy="749" grid="0" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -344,7 +344,7 @@
                 <mxCell id="176" value="&lt;div&gt;total_amount&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
                     <mxGeometry x="56" y="809" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="177" value="&lt;div&gt;order_date&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+                <mxCell id="177" value="&lt;div&gt;order_time&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
                     <mxGeometry x="43" y="755" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="392" style="edgeStyle=none;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="205" target="317" edge="1">
@@ -514,7 +514,7 @@
                 <mxCell id="320" value="date_of_birth" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
                     <mxGeometry x="-386" y="579" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="329" value="delivered_date" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;dashed=1;" parent="1" vertex="1">
+                <mxCell id="329" value="delivered_date" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
                     <mxGeometry x="329" y="907" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="603" style="edgeStyle=none;html=1;entryX=0.589;entryY=0.892;entryDx=0;entryDy=0;endArrow=none;endFill=0;entryPerimeter=0;" parent="1" source="330" target="317" edge="1">
@@ -625,6 +625,12 @@
                 </mxCell>
                 <mxCell id="632" value="discounted price is a new lower price that overrides the old price.&lt;br&gt;&amp;nbsp;it is not a calculated field (which would raise issues of transitive dependency)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
                     <mxGeometry x="310" y="506" width="429" height="41" as="geometry"/>
+                </mxCell>
+                <mxCell id="634" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="633" target="317">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="633" value="dispatched_date" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+                    <mxGeometry x="229" y="932" width="100" height="40" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

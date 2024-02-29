@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="CGE-V-YyImQBMw3J6Rf1" name="Page-1">
-        <mxGraphModel dx="1753" dy="841" grid="0" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2007" dy="959" grid="0" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -570,8 +570,8 @@
                 <mxCell id="601" value="&lt;div&gt;1 order can be paid by card ONLY&lt;/div&gt;&lt;div&gt;must be paid in 1 transaction&lt;br&gt;Assumption: the customer who&lt;br&gt;made the order is the one who pays&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="419" y="666" width="209" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="606" value="company only uses 1 courier (its own)&lt;br&gt;shippingcost only depends on delivery type (e.g. standard, premium), not the delivery address. We assume that cost of delivery type is fixed for whole nation-wide delivery.&lt;br&gt;delivery status (e.g. dispatched, in transit, delivered, returned) is dependent on dispatched date and delivered date.&lt;br&gt;Delivery time is an input of the actual timedate when the parcel reachers the customer. It is not a calculated field (ETA) based on delivery type and order date, because there may be&lt;br&gt;delays for which the parcel reaches customer.&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="-109" y="992" width="976" height="84" as="geometry"/>
+                <mxCell id="606" value="company only uses 1 courier (its own)&lt;br&gt;shippingcost only depends on delivery type (e.g. standard, premium), not the delivery address. We assume that cost of delivery type is fixed for whole nation-wide delivery.&lt;br&gt;delivery status (e.g. dispatched, in transit, delivered, returned) is dependent on dispatched date and delivered date. We want to capture multiple values of delivery status (hence, for each delivery, there&amp;nbsp;&lt;br&gt;are multiple rows. This helps us to find how long has a delivery stayed in a particular status)&lt;br&gt;Delivery time is an input of the actual timedate when the parcel reachers the customer. It is not a calculated field (ETA) based on delivery type and order date, because there may be&lt;br&gt;delays for which the parcel reaches customer.&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="-162" y="985" width="1082" height="98" as="geometry"/>
                 </mxCell>
                 <mxCell id="625" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" parent="1" source="616" target="7" edge="1">
                     <mxGeometry relative="1" as="geometry">

@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="CGE-V-YyImQBMw3J6Rf1" name="Page-1">
-        <mxGraphModel dx="1754" dy="749" grid="0" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2105" dy="819" grid="0" gridSize="13" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -570,58 +570,64 @@
                 <mxCell id="601" value="&lt;div&gt;1 order can be paid by card ONLY&lt;/div&gt;&lt;div&gt;must be paid in 1 transaction&lt;br&gt;Assumption: the customer who&lt;br&gt;made the order is the one who pays&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="419" y="666" width="209" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="606" value="company only uses 1 courier (its own)&lt;br&gt;shippingcost only depends on delivery type (e.g. standard, premium), not the delivery address. We assume that cost of delivery type is fixed for whole nation-wide delivery.&lt;br&gt;delivery status would be an independent input (e.g. dispatched, in transit, delivered, returned), because delivery time is not ETA.&lt;br&gt;Delivery time is an input of the actual timedate when the parcel reachers the customer. It is not a calculated field (ETA) based on delivery type and order date, because there may be&lt;br&gt;delays for which the parcel reaches customer.&amp;nbsp;&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="-94" y="960" width="976" height="84" as="geometry"/>
+                <mxCell id="606" value="company only uses 1 courier (its own)&lt;br&gt;shippingcost only depends on delivery type (e.g. standard, premium), not the delivery address. We assume that cost of delivery type is fixed for whole nation-wide delivery.&lt;br&gt;delivery status (e.g. dispatched, in transit, delivered, returned) is dependent on dispatched date and delivered date.&lt;br&gt;Delivery time is an input of the actual timedate when the parcel reachers the customer. It is not a calculated field (ETA) based on delivery type and order date, because there may be&lt;br&gt;delays for which the parcel reaches customer.&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="-109" y="992" width="976" height="84" as="geometry"/>
                 </mxCell>
-                <mxCell id="625" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" parent="1" source="616" target="623" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="616" value="&lt;div&gt;unit&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-                    <mxGeometry x="349" y="-197.5" width="100" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="626" style="edgeStyle=none;html=1;entryX=0.681;entryY=0.074;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" parent="1" source="617" target="623" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="617" value="&lt;div&gt;city&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-                    <mxGeometry x="449" y="-170.5" width="100" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="627" style="edgeStyle=none;html=1;entryX=0.937;entryY=0.235;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" parent="1" source="618" target="623" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="618" value="&lt;div&gt;floor&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-                    <mxGeometry x="530" y="-125.5" width="100" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="628" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="619" target="623" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="619" value="&lt;div&gt;street&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-                    <mxGeometry x="576" y="-76.5" width="100" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="629" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" parent="1" source="620" target="623" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="620" value="&lt;div&gt;block&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-                    <mxGeometry x="594" y="-18.5" width="100" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="630" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" parent="1" source="621" target="623" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="621" value="&lt;div&gt;country&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-                    <mxGeometry x="581" y="34.5" width="100" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="631" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" parent="1" source="622" target="623" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="622" value="&lt;div&gt;zipcode&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-                    <mxGeometry x="504" y="85.5" width="100" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="624" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" parent="1" source="623" edge="1">
+                <mxCell id="625" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" parent="1" source="616" target="7" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="301.964283662684" y="66.32231229894307" as="targetPoint"/>
+                        <mxPoint x="317.40806975776013" y="3.5268904862678028" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="623" value="address" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-                    <mxGeometry x="366" y="-66" width="100" height="40" as="geometry"/>
+                <mxCell id="616" value="&lt;div&gt;unit&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+                    <mxGeometry x="253" y="-128" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="626" style="edgeStyle=none;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="617" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="338.0999999999999" y="6.460000000000036" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="617" value="&lt;div&gt;city&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+                    <mxGeometry x="353" y="-101" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="627" style="edgeStyle=none;html=1;entryX=0.918;entryY=0.018;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" parent="1" source="618" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="363.6999999999998" y="12.899999999999977" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="618" value="&lt;div&gt;floor&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+                    <mxGeometry x="434" y="-56" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="628" style="edgeStyle=none;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="619" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="370" y="23.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="619" value="&lt;div&gt;street&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="-7" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="629" style="edgeStyle=none;html=1;endArrow=none;endFill=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="620" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="364.4451199869045" y="32.66193262887941" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="620" value="&lt;div&gt;block&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+                    <mxGeometry x="498" y="51" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="630" style="edgeStyle=none;html=1;endArrow=none;endFill=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="621" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="352.60196344142605" y="38.66370392624481" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="621" value="&lt;div&gt;country&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+                    <mxGeometry x="485" y="104" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="631" style="edgeStyle=none;html=1;endArrow=none;endFill=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="622" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="337.16703424678735" y="42.28421863235462" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="622" value="&lt;div&gt;zipcode&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+                    <mxGeometry x="408" y="155" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="632" value="discounted price is a new lower price that overrides the old price.&lt;br&gt;&amp;nbsp;it is not a calculated field (which would raise issues of transitive dependency)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
                     <mxGeometry x="310" y="506" width="429" height="41" as="geometry"/>
@@ -631,6 +637,12 @@
                 </mxCell>
                 <mxCell id="633" value="dispatched_date" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=0;rounded=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
                     <mxGeometry x="229" y="932" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="636" value="&lt;div&gt;payment status is an input from the bank, so not transitive FD on anything&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="1088" y="729" width="410" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="637" value="&lt;div&gt;can be different from total amount under 'Order' because there might be&amp;nbsp;&lt;/div&gt;&lt;div&gt;vouchers/extra bank charges&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="1022" y="628" width="402" height="41" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

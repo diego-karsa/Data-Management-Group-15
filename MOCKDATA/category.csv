@@ -1,0 +1,11 @@
+category_id,category_name,category_description,parent_category_id
+1,Electronics,Electronic devices and gadgets.,
+2,Mobile Phones,Smartphones and mobile accessories.,1
+3,Laptops,Personal and professional computing devices.,1
+4,Fashion,"Clothing, footwear, and accessories.",
+5,Men's Clothing,Apparel and accessories for men.,4
+6,Women's Clothing,Apparel and accessories for women.,4
+7,Books,"Literature, academic, and non-fiction books.",
+8,Fiction Books,Novels and stories across various genres.,7
+9,Non-Fiction Books,"Educational, biographical, and documentary literature.",7
+10,Home & Kitchen,"Appliances, decor, and kitchenware.",

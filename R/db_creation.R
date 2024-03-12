@@ -4,7 +4,7 @@ library(readr)
 
 # Connect to the database (this will create the database if it doesn't exist)
 
-db_path = "/cloud/project/DATABASE/ecom.db"
+db_path = "DATABASE/ecom.db"
 
 db <- dbConnect(SQLite(), dbname = db_path)
 
@@ -135,7 +135,7 @@ files_and_tables <- list(
 )
 
 # Base path where CSV files are stored
-base_path <- "/cloud/project/MOCKDATA/"
+base_path <- "MOCKDATA/"
 
 # Loop through each file and table name pair, import the CSV file into R, and then write to the SQLite table
 for (file in names(files_and_tables)) {

@@ -41,7 +41,7 @@ jobs:
         run: |
           git config --global user.email "diego.karsaclian@gmail.com"
           git config --global user.name "diego-karsa"
-          git add --DATABASE/
+          git add --all DATABASE/
       - name: Commit files
         run: |
           git commit -m "Updated database"

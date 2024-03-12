@@ -36,7 +36,7 @@ jobs:
           Rscript -e 'install.packages(c("RSQLite", "readr"))'
       - name: Execute R script
         run: |
-          Rscript R/IB9HP0_Group15.rmd
+          Rscript R/db_creation.R
       - name: Add files
         run: |
           git config --global user.email "diego.karsaclian@gmail.com"

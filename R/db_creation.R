@@ -1,9 +1,5 @@
 library(readr)
 library(RSQLite)
-library(dplyr)
-library(DBI)
-library(DBI)
-library(RSQLite)
 
 ecom_db <- dbConnect(RSQLite::SQLite(), "/cloud/project/DATABASE/ecom.db")
 

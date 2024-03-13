@@ -109,5 +109,35 @@ for (statement in create_statements) {
 }
 
 
+library(DBI)
 
+# Define the path to the database and connect
+database_path <- "/cloud/project/DATABASE/ecom.db"
+csv_files_path <- "/cloud/project/MOCKDATA"
+ecom_db <- dbConnect(RSQLite::SQLite(), database_path)
+
+# Define the names of your tables
+# If you have more tables, you should add them to this list
+table_names <- c("customer", "supplier", "category", "product", "advertisement", "orders", "order_details", "delivery", "transactions")
+
+# Loop through the table names and import each corresponding CSV file
+for (table_name in table_names) {
+  # Create the full path to the CSV file
+  csv_file_path <- file.path(csv_files_path, paste0(table_name, ".csv"))
+  # Read the CSV file into a data frame
+  # Adjust the read.csv parameters according to your CSV files' structure
+  table_data <- read.csv(csv_file_path, stringsAsFactors = FALSE, check.names = FALSE)
+  # Write the data to the table in the database
+  # Set append = TRUE if you want to add to an existing table
+  # Set overwrite = TRUE if you want to replace the existing table
+  dbWriteTable(ecom_db, table_name, table_data, append = FALSE, overwrite = TRUE, row.names = FALSE)
+}
+
+# Disconnect from the database
 dbDisconnect(ecom_db)
+
+
+
+
+
+

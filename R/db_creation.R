@@ -57,7 +57,6 @@ create_statements <- c(
     product_price DECIMAL(10, 2) NOT NULL,
     product_stock INT NOT NULL,
     rating DECIMAL(3, 2),
-    is_discounted BOOLEAN,
     FOREIGN KEY (supplier_id) REFERENCES supplier(supplier_id),
     FOREIGN KEY (category_id) REFERENCES category(category_id)
   );",

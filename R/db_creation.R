@@ -22,7 +22,9 @@ create_statements <- c(
     cutomer_street VARCHAR(100) NOT NULL,
     cutomer_city VARCHAR(60),
     cutomer_country VARCHAR(40) NOT NULL,
-    cutomer_zip_code VARCHAR(20) NOT NULL
+    cutomer_zip_code VARCHAR(20) NOT NULL,
+    UNIQUE(customer_phone),
+    UNIQUE(customer_email)
   );",
   "CREATE TABLE supplier (
     supplier_id VARCHAR(100) PRIMARY KEY NOT NULL,
@@ -35,7 +37,9 @@ create_statements <- c(
     supplier_street VARCHAR(100) NOT NULL,
     supplier_city VARCHAR(60),
     supplier_country VARCHAR(40) NOT NULL,
-    supplier_zip_code VARCHAR(20) NOT NULL
+    supplier_zip_code VARCHAR(20) NOT NULL,
+    UNIQUE(supplier_phone),
+    UNIQUE(supplier_email)
   );",
   "CREATE TABLE category (
     category_id VARCHAR(100) PRIMARY KEY NOT NULL,

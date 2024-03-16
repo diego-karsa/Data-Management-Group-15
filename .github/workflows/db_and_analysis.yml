@@ -33,7 +33,8 @@ jobs:
       - name: Install packages
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
-          Rscript -e 'install.packages(c("RSQLite", "readr", "purrr"))'
+          Rscript -e 'install.packages(c("RSQLite", "readr", "purrr", "ggplot2", 
+          "dplyr", "lubridate", "stringr", "forcats", "scales"))'
       - name: Execute R script
         run: |
           Rscript R/db_creation.R
@@ -45,6 +46,17 @@ jobs:
       - name: Commit files
         run: |
           git commit -m "Updated database"
+      - name: Execute R script
+        run: |
+          Rscript R/analysis.R
+      - name: Add files
+        run: |
+          git config --global user.email "diego.karsaclian@gmail.com"
+          git config --global user.name "diego-karsa"
+          git add --all Plots/
+      - name: Commit files
+        run: |
+          git commit -m "Updated plots"
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:

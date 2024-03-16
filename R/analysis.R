@@ -142,6 +142,6 @@ ggplot_objects <- list(
 
 # Export each ggplot object as PNG with specified DPI
 for (plot_name in names(ggplot_objects)) {
-  filename <- paste("Analysis/Plots/", plot_name, "_", max_year, ".png", sep = "")
+  filename <- paste("Plots/", plot_name, "_", max_year, ".png", sep = "")
   ggsave(filename = filename, plot = ggplot_objects[[plot_name]], dpi = 300)
 }

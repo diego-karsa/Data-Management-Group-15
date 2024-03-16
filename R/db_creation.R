@@ -1,4 +1,5 @@
 library(readr)
+library(purrr)
 library(RSQLite)
 
 if (!file.exists("DATABASE/ecom.db")) {
@@ -110,30 +111,54 @@ if (!file.exists("DATABASE/ecom.db")) {
   }
 }
 
-# Define the path to the database and connect
+# Define paths
 database_path <- "DATABASE/ecom.db"
 csv_files_path <- "MOCKDATA"
 
-ecom_db <- dbConnect(RSQLite::SQLite(), database_path)
-
-# Define the names of your tables
-# If you have more tables, you should add them to this list
+# Create vector with table names
 table_names <- c("customer", "supplier", "category", "product", "advertisement", "orders", "order_details", "delivery", "transactions")
 
-# Loop through the table names and import each corresponding CSV file
+# Read mock data
+mock <- purrr::map(table_names, ~ read_csv(file.path(csv_files_path, paste0(.x, ".csv")))) %>% 
+  purrr::set_names(table_names)
+
+# Foreign key check
+test1 <- purrr::map_int(mock, ~ nrow(.))
+
+mock$product <- mock$product %>%
+  dplyr::filter(supplier_id %in% mock$supplier$supplier_id,
+         category_id %in% mock$category$category_id)
+
+mock$advertisement <- mock$advertisement %>%
+  dplyr::filter(product_id %in% mock$product$product_id)
+
+mock$orders <- mock$orders %>%
+  dplyr::filter(customer_id %in% mock$customer$customer_id)
+
+mock$order_details <- mock$order_details %>%
+  dplyr::filter(order_id %in% mock$orders$order_id,
+         product_id %in% mock$product$product_id)
+
+mock$delivery <- mock$deliver %>%
+  dplyr::filter(order_id %in% mock$orders$order_id)
+
+mock$transactions <- mock$transactions %>%
+  dplyr::filter(order_id %in% mock$orders$order_id)
+  
+test2 <- map_int(mock, ~ nrow(.))
+
+# Check for differences (0 means no rows dropped because of FK problems)
+print(test1 - test2)
+
+# Connect to database
+ecom_db <- dbConnect(RSQLite::SQLite(), database_path)
+
+# Write data to database tables
 for (table_name in table_names) {
-  # Create the full path to the CSV file
-  csv_file_path <- file.path(csv_files_path, paste0(table_name, ".csv"))
-  # Read the CSV file into a data frame
-  # Adjust the read.csv parameters according to your CSV files' structure
-  table_data <- read.csv(csv_file_path, stringsAsFactors = FALSE, check.names = FALSE)
-  # Write the data to the table in the database
-  # Set append = TRUE if you want to add to an existing table
-  # Set overwrite = TRUE if you want to replace the existing table
-  for (i in 1:nrow(table_data)) {
+  for (i in 1:nrow(mock[[table_name]])) {
     # Attempt to write each row
     tryCatch({
-      dbWriteTable(ecom_db, name = table_name, value = table_data[i, ], append = TRUE, overwrite = FALSE, row.names = FALSE)
+      dbWriteTable(ecom_db, name = table_name, value = mock[[table_name]][i, ], append = TRUE, overwrite = FALSE, row.names = FALSE)
     }, error = function(e) {
       # Log the error
       cat("Error writing row ", i, ": ", conditionMessage(e), "\n", sep = "")

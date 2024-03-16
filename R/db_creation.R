@@ -2,9 +2,14 @@ library(readr)
 library(purrr)
 library(RSQLite)
 
-if (!file.exists("DATABASE/ecom.db")) {
+# Define paths
+database_path <- "DATABASE/ecom.db"
+csv_files_path <- "MOCKDATA"
+
+# If database file does not exist, create file and tables
+if (!file.exists(database_path)) {
   
-  ecom_db <- dbConnect(RSQLite::SQLite(), "DATABASE/ecom.db")
+  ecom_db <- dbConnect(RSQLite::SQLite(), database_path)
   
   create_statements <- c(
     "CREATE TABLE customer (
@@ -110,10 +115,6 @@ if (!file.exists("DATABASE/ecom.db")) {
     dbExecute(ecom_db, statement)
   }
 }
-
-# Define paths
-database_path <- "DATABASE/ecom.db"
-csv_files_path <- "MOCKDATA"
 
 # Create vector with table names
 table_names <- c("customer", "supplier", "category", "product", "advertisement", "orders", "order_details", "delivery", "transactions")

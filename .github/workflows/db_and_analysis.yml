@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: DB Creation
+name: DB Creation Validation Append Analytics
 
 # Controls when the workflow will run
 on:

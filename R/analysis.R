@@ -256,7 +256,6 @@ ggplot_objects <- list(
   "avg_fulfillment" = avg_fulfillment,
   "avg_order_value" = avg_order_value,
   "top_rated_products" = top_rated_products,
-  "daily_sales_2023" = daily_sales_2023,
   "monthly_sales" = monthly_sales,
   "yearly_sales" = yearly_sales,
   "customer_age" = customer_age,

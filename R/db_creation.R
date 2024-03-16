@@ -124,8 +124,11 @@ mock <- purrr::map(table_names, ~ read_csv(file.path(csv_files_path, paste0(.x, 
   purrr::set_names(table_names)
 
 # Foreign key check
+
+# Keep a record of number of rows
 test1 <- purrr::map_int(mock, ~ nrow(.))
 
+# For tables with FK, filter rows that have a FK not present as PK in the Primary Table
 mock$product <- mock$product %>%
   dplyr::filter(supplier_id %in% mock$supplier$supplier_id,
          category_id %in% mock$category$category_id)

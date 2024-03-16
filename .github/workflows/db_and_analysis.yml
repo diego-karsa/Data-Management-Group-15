@@ -35,7 +35,7 @@ jobs:
         run: |
           Rscript -e 'install.packages(c("RSQLite", "readr", "purrr", "ggplot2", 
           "dplyr", "lubridate", "stringr", "forcats", "scales"))'
-      - name: Execute R script
+      - name: Execute R script db creation update
         run: |
           Rscript R/db_creation.R
       - name: Add files
@@ -46,7 +46,7 @@ jobs:
       - name: Commit files
         run: |
           git commit -m "Updated database"
-      - name: Execute R script
+      - name: Execute R script analysis
         run: |
           Rscript R/analysis.R
       - name: Add files

@@ -33,7 +33,7 @@ jobs:
       - name: Install packages
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
-          Rscript -e 'install.packages(c("RSQLite", "readr"))'
+          Rscript -e 'install.packages(c("RSQLite", "readr", "purrr"))'
       - name: Execute R script
         run: |
           Rscript R/db_creation.R

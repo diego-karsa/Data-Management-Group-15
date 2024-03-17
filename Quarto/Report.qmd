@@ -38,3 +38,5 @@ The ER diagram is in 1^st^ normalised form.
 10. The customer who makes the order is the one who pays as well.
 
 11. Each order may or may not have a delivery. One delivery is made for only one order.
+
+12. jhsxkhvcekdwljwl;ek

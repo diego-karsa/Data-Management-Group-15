@@ -1,0 +1,40 @@
+---
+title: "Ecomm Report"
+author: "Group 15"
+format: pdf
+editor: visual
+---
+
+# Ecom Report
+
+------------------------------------------------------------------------
+
+## Part 1: Database Design and Implementation
+
+### Part 1.2: E-R Diagram Design
+
+We are basing our database design and workflows on a real-world e-commerce data environment, inspired by Amazon. The e-commerce company only uses its own courier.
+
+The ER diagram is in 1^st^ normalised form.
+
+1.  We assume that 1 product must belong to 1 category, and a category must at least have 1 or more product(s).
+
+2.  Many categories can be the child of a parent category.
+
+3.  Each product can only have 1 advertisement, and each advertisement is always for 1 product.
+
+4.  Each product has a unique supplier, but a supplier can supply many types of products.
+
+5.  Each customer only has 1 address.
+
+6.  ‘Order’ is a relationship between ‘Customer’, ‘Product’ and ‘Transaction’ entities.
+
+7.  1 order can have many products, and a type of product can be in multiple orders.
+
+8.  A customer can make multiple orders, but each order must belong to 1 customer.
+
+9.  Each order may or may not have a transaction. An order must only be paid in a single transaction, by credit or debit card.
+
+10. The customer who makes the order is the one who pays as well.
+
+11. Each order may or may not have a delivery. One delivery is made for only one order.

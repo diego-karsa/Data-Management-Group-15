@@ -47,23 +47,21 @@ As a result, we have obtained these tables in logical schema:
 
 1.  CUSTOMER (customer_id, first_name, last_name, date_of_birth, customer_phone, customer_email, customer_unit, customer_floor, customer_block, customer_street, customer_city, customer_country, customer_zipcode)
 
-2.  PRODUCT(product_id, supplier_id, category_id, product_name, product_description, product_price, product_stock, rating, is_discounted)
+2.  PRODUCT (product_id, supplier_id, category_id, product_name, product_description, product_price, product_stock, rating, is_discounted)
 
-3.  SUPPLIER(supplier_id, supplier_name, supplier_phone, supplier_email, supplier_unit, supplier_floor, supplier_block, supplier_street, supplier_city, supplier_country, supplier_zipcode)
+3.  SUPPLIER (supplier_id, supplier_name, supplier_phone, supplier_email, supplier_unit, supplier_floor, supplier_block, supplier_street, supplier_city, supplier_country, supplier_zipcode)
 
-4.  AD(ad_id, product_id, url, ad_start_date, ad_end_date, discount)
+4.  ADVERTISEMENT (ad_id, product_id, url, ad_start_date, ad_end_date, discount)
 
-5.  TRANSACTIONS(transactions_id, order_id, transaction_date, payment_type, card_number, expiry_date, cvv, payment_status)
+5.  TRANSACTIONS (transactions_id, order_id, transaction_date, payment_type, card_number, expiry_date, cvv, payment_status)
 
-6.  CATEGORY(category_id, name, description, parent_category_id)
+6.  CATEGORY (category_id, name, description, parent_category_id)
 
-7.  ORDER(order_id, customer_id, order_date, status_of_order)
+7.  ORDER (order_id, customer_id, order_date, status_of_order)
 
-8.  ORDER_DETAILS(order_id, product_id, quantity_of_product)
+8.  ORDER_DETAILS (order_id, product_id, quantity_of_product)
 
 9.  DELIVERY(delivery_id, order_id, delivery_type, dispatched_date, delivered_date, delivery_status, delivery_cost)
-
-10. Discounted_price (for the Product), total_amount (for the Order) and total_value (for the Transaction) are derived attributes, which we do not include on the ER diagram or the schema, but we can calculate them using SQL later on.
 
 We have made these assumptions:
 

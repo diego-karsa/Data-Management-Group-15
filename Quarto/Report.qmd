@@ -37,7 +37,7 @@ The ER diagram is in 1^st^ normalised form.
 
 [*Please refer to Appendix 1 for the relationship sets between the key entities.*]{.underline}
 
-![Initial ER Diagram](images/ER_Initial.drawio.png){fig-align="center"}
+![Final ER Diagram](images/ER_Initial.drawio.png){fig-align="center"}
 
 ## Task 1.2: SQL Database Schema Creation
 

@@ -35,8 +35,6 @@ The ER diagram is in 1^st^ normalised form.
 
 11. Each order may or may not have a delivery. One delivery is made for only one order.
 
-[*Please refer to Appendix 1 for the relationship sets between the key entities.*]{.underline}
-
 ![Final ER Diagram](images/ER_Initial.drawio.png){fig-align="center"}
 
 ## Task 1.2: SQL Database Schema Creation

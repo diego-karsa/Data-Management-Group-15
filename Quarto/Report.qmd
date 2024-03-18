@@ -69,9 +69,13 @@ We have made these assumptions:
 
 3.  Delivered_date is an input of the actual timedate when the parcel reaches the customer. It is not a calculated field (ETA) based on delivery type and order date, because there may be delays for which the parcel reaches customer. Delivered_date must be after dispatched_date
 
-4.  Delivery status is dependent on dispatched date and delivered date: “Pending” (both dispatched_date and delivered_date is NULL), “shipped” means the parcel is on the way (delivered_date is NULL), “delivered” means parcel has reached the customer. We want to capture multiple values of delivery status (hence, for each delivery, there are multiple rows showing different statuses. This helps us to find how long has a delivery stayed in a particular status)
+4.  Delivery status is dependent on dispatched date and delivered date: “Pending” (both dispatched_date and delivered_date is NULL), “shipped” means the parcel is on the way (delivered_date is NULL), “delivered” means the parcel has reached the customer. We want to capture multiple values of delivery status (hence, for each delivery, there are multiple rows showing different statuses. This helps us to find how long has a delivery stayed in a particular status)
 
-In the database schema depicted in Figure 2, based on previous assumptions as well as the actual situation, the following data structuring conventions have been established:
+Additionally, Figure 2 shows the relationship sets of our database.
+
+![Relationship sets](images/relationship%20set%20-01.png){fig-align="center"}
+
+In the database schema depicted in Figure 3, based on previous assumptions as well as the actual situation, the following data structuring conventions have been established:
 
 1.  Primary keys are designated in the varchar format to accommodate future scalability and uniqueness, indicated by a yellow icon.
 
@@ -125,7 +129,7 @@ Utilize GitHub to streamline the database creation process and maintain up-to-da
 
 **GitHub Repository Structure:**
 
-We created \`[github.com/diego-karsa/Data-Management-Group-15]{.underline}\` repository for project management and version control. This repository contains all vital elements, including the SQL schema, setup scripts, query scripts, project documentation, and data analysis plots.
+We created ' [github.com/diego-karsa/Data-Management-Group-15]{.underline} ' repository for project management and version control. This repository contains all vital elements, including the SQL schema, setup scripts, query scripts, project documentation, and data analysis plots.
 
 ![GitHub Repository](images/GitHub_Repo.png){fig-align="center"}
 

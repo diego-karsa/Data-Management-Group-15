@@ -7,7 +7,7 @@ editor: visual
 
 # Part 1: Database Design and Implementation
 
-## Part 1.2: E-R Diagram Design
+## Task 1.1: E-R Diagram Design
 
 We are basing our database design and workflows on a real-world e-commerce data environment, inspired by Amazon. The e-commerce company only uses its own courier.
 
@@ -35,9 +35,19 @@ The ER diagram is in 1^st^ normalised form.
 
 11. Each order may or may not have a delivery. One delivery is made for only one order.
 
-*(Please refer to the Appendix 1 to see the relationship sets between key entities.)*
-
 ![Final ER Diagram](images/ER_Initial.drawio.png){fig-align="center" width="529"}
+
+Relationships between key entities are shown in Figure 2. We can tell that:
+
+1.  One-to-Many relationship: CUSTOMER and TRANSACTION, SUPPLIER and PRODUCT, CATEGORY and PRODUCT.
+
+2.  Many-to-Many relationship: CUSTOMER and PRODUCT
+
+3.  One-to-One relationship: TRANSACTION and DELIVERY, ADVERTISEMENT and Product
+
+4.  Recursive relationship: CATEGORY
+
+![Relationship Set](images/relationship_set.png){fig-align="center" width="348"}
 
 ## Task 1.2: SQL Database Schema Creation
 
@@ -87,7 +97,7 @@ In the database schema depicted in Figure 2, based on previous assumptions as we
 
 6.  The advertisement table presumes a singular, active advertisement per product with defined start and end dates, and an associated discount percentage. This discount is recorded as DECIMAL(6, 4) to ensure precision up to four decimal places.
 
-![Table Schema](images/Schema.png){fig-align="center" width="434"}
+![Table Schema](images/Schema.png){fig-align="center" width="353"}
 
 # Part 2: Data Generation and Management
 
@@ -242,11 +252,5 @@ Finally, the 'Average Rating by Category, 2023' plot illustrates customer satisf
 **Conclusion:**
 
 The analysed data presents a comprehensive view of the company's operations throughout the years and focuses on key figures in the year 2023. The insights provide a solid foundation for strategic planning, focusing on customer engagement, sales optimization, and product management for the upcoming year.
-
-# Appendix
-
-## Appendix 1 Relationship Sets
-
-![Relationship Sets](images/relationship_set.png){fig-align="center" width="368"}
 
 ------------------------------------------------------------------------

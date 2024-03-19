@@ -23,7 +23,7 @@ The ER diagram is in 1^st^ normalised form.
 
 5.  Each customer only has 1 address.
 
-6.  ‘Order’ is a relationship between ‘Customer’, ‘Product’ and ‘Transaction’ entities.
+6.  'Order' is a relationship between 'Customer', 'Product' and 'Transaction' entities.
 
 7.  1 order can have many products, and a type of product can be in multiple orders.
 
@@ -35,7 +35,9 @@ The ER diagram is in 1^st^ normalised form.
 
 11. Each order may or may not have a delivery. One delivery is made for only one order.
 
-![Final ER Diagram](images/ER_Initial.drawio.png){fig-align="center"}
+*(Please refer to the Appendix 1 to see the relationship sets between key entities.)*
+
+![Final ER Diagram](images/ER_Initial.drawio.png){fig-align="center" width="529"}
 
 ## Task 1.2: SQL Database Schema Creation
 
@@ -43,23 +45,23 @@ To convert 1st normalised form to 3rd normalised form, we have removed all parti
 
 As a result, we have obtained these tables in logical schema:
 
-1.  CUSTOMER (customer_id, first_name, last_name, date_of_birth, customer_phone, customer_email, customer_unit, customer_floor, customer_block, customer_street, customer_city, customer_country, customer_zipcode)
+1.  CUSTOMER ([customer_id]{.underline}, first_name, last_name, date_of_birth, customer_phone, customer_email, customer_unit, customer_floor, customer_block, customer_street, customer_city, customer_country, customer_zipcode)
 
-2.  PRODUCT (product_id, supplier_id, category_id, product_name, product_description, product_price, product_stock, rating, is_discounted)
+2.  PRODUCT ([product_id]{.underline}, supplier_id, category_id, product_name, product_description, product_price, product_stock, rating)
 
-3.  SUPPLIER (supplier_id, supplier_name, supplier_phone, supplier_email, supplier_unit, supplier_floor, supplier_block, supplier_street, supplier_city, supplier_country, supplier_zipcode)
+3.  SUPPLIER ([supplier_id]{.underline}, supplier_name, supplier_phone, supplier_email, supplier_unit, supplier_floor, supplier_block, supplier_street, supplier_city, supplier_country, supplier_zipcode)
 
-4.  ADVERTISEMENT (ad_id, product_id, url, ad_start_date, ad_end_date, discount)
+4.  ADVERTISEMENT ([ad_id]{.underline}, product_id, ad_url, ad_start_date, ad_end_date, discount)
 
-5.  TRANSACTIONS (transactions_id, order_id, transaction_date, payment_type, card_number, expiry_date, cvv, payment_status)
+5.  TRANSACTIONS ([transactions_id]{.underline}, order_id, transaction_date, payment_type, card_number, expiry_date, cvv, payment_status)
 
-6.  CATEGORY (category_id, name, description, parent_category_id)
+6.  CATEGORY ([category_id]{.underline}, name, description, parent_category_id)
 
-7.  ORDER (order_id, customer_id, order_date, status_of_order)
+7.  ORDER ([order_id]{.underline}, customer_id, order_date, status_of_order)
 
-8.  ORDER_DETAILS (order_id, product_id, quantity_of_product)
+8.  ORDER_DETAILS (order_id, product_id, quantity)
 
-9.  DELIVERY(delivery_id, order_id, delivery_type, dispatched_date, delivered_date, delivery_status, delivery_cost)
+9.  DELIVERY([delivery_id]{.underline}, order_id, delivery_type, dispatched_date, delivered_date, delivery_status, delivery_cost)
 
 We have made these assumptions:
 
@@ -69,11 +71,11 @@ We have made these assumptions:
 
 3.  Delivered_date is an input of the actual timedate when the parcel reaches the customer. It is not a calculated field (ETA) based on delivery type and order date, because there may be delays for which the parcel reaches customer. Delivered_date must be after dispatched_date
 
-4.  Delivery status is dependent on dispatched date and delivered date: “Pending” (both dispatched_date and delivered_date is NULL), “shipped” means the parcel is on the way (delivered_date is NULL), “delivered” means parcel has reached the customer. We want to capture multiple values of delivery status (hence, for each delivery, there are multiple rows showing different statuses. This helps us to find how long has a delivery stayed in a particular status)
+4.  Delivery status is dependent on dispatched date and delivered date: "Pending" (both dispatched_date and delivered_date is NULL), "shipped" means the parcel is on the way (delivered_date is NULL), "delivered" means parcel has reached the customer.
 
 In the database schema depicted in Figure 2, based on previous assumptions as well as the actual situation, the following data structuring conventions have been established:
 
-1.  Primary keys are designated in the varchar format to accommodate future scalability and uniqueness, indicated by a yellow icon.
+1.  Primary keys are designated in the Varchar format to accommodate future scalability and uniqueness, indicated by a yellow icon.
 
 2.  Date attributes are uniformly of the DATE type, adhering to the yyyy-mm-dd format.
 
@@ -85,7 +87,7 @@ In the database schema depicted in Figure 2, based on previous assumptions as we
 
 6.  The advertisement table presumes a singular, active advertisement per product with defined start and end dates, and an associated discount percentage. This discount is recorded as DECIMAL(6, 4) to ensure precision up to four decimal places.
 
-![Schema](images/Schema.png)
+![Table Schema](images/Schema.png){fig-align="center" width="434"}
 
 # Part 2: Data Generation and Management
 
@@ -127,7 +129,7 @@ Utilize GitHub to streamline the database creation process and maintain up-to-da
 
 We created \`[github.com/diego-karsa/Data-Management-Group-15]{.underline}\` repository for project management and version control. This repository contains all vital elements, including the SQL schema, setup scripts, query scripts, project documentation, and data analysis plots.
 
-![GitHub Repository](images/GitHub_Repo.png){fig-align="center"}
+![GitHub Repository](images/GitHub_Repo.png){fig-align="center" width="520"}
 
 ## Task 3.2 GitHub Actions for Continuous Integration
 
@@ -139,22 +141,23 @@ Implement GitHub Actions to automate crucial tasks like data validation, databas
 
 A Github action workflow named \`db_and_analysis.yml\` was implemented to automate our data pipeline. Triggered by push events or manually, this workflow facilitates data validation, updates, and analysis on an Ubuntu server.
 
-![Workflow Setup](images/Workflow_Setup.png){fig-align="center"}
+![Workflow Setup](images/Workflow_Setup.png){fig-align="center" width="501"}
 
 **Workflow Tasks:**
 
 1.  Setting up R environment: The latest repository code is retrieved, and the R environment is set up with necessary package caching.
 
-2.  Package installations and database creation: Required R packages are installed, and the \`db_creation.R\` script builds the database, followed by the addition of changes to the \`DATABASE\` folder.\
-    ![Workflow for Database Creation using RScript](images/Database_Creation_and_Validation-01.png)
+2.  Package installations and database creation: Required R packages are installed, and the \`db_creation.R\` script builds the database, followed by the addition of changes to the \`DATABASE\` folder.
+
+![Workflow for Database Creation using RScript](images/Database_Creation_and_Validation-01.png){fig-align="center" width="429"}
 
 3.  Data analysis and visualizations: The \`analysis.R\` script runs for data analysis and visualization creation, with outputs added to the \`Plots\` folder and then to the repository.
 
 4.  Committing changes: Changes are committed with a descriptive message and pushed to the main branch.
 
-![Workflow for Data Analysis using R and Pushing Changes](images/Data_Analysis.png){fig-align="center"}
-
 Through this workflow, we have automated the data management process, enhancing the efficiency and reliability of our system, showcasing GitHub Actions as a powerful tool for continuous integration in data-driven projects.
+
+![Workflow for Data Analysis using R and Pushing Changes](images/Data_Analysis.png){fig-align="center" width="400"}
 
 # Part 4: Data Analysis and Reporting with Quarto in R
 
@@ -190,54 +193,60 @@ The intent of this section is to detail the insights derived from a sophisticate
 
 [Average Time Until Order Fulfillment:]{.underline}
 
-![Average Time Until Order Fulfillment](images/avg_fulfillment_2023.png){fig-align="center"}
+![Average Time Until Order Fulfillment](images/avg_fulfillment_2023.png){fig-align="center" width="441"}
 
 The 'Average time until order fulfillment, 2023' graph demonstrates a consistent delivery performance across all four quarters, indicating an effective and stable logistics system. This consistency is crucial for customer satisfaction and retention.
 
 [Average Order Value:]{.underline}
 
-![Average Order Value](images/avg_order_value_2023.png){fig-align="center"}
+![Average Order Value](images/avg_order_value_2023.png){fig-align="center" width="395"}
 
 Our analysis of the 'Average order value (£), 2023' highlighted seasonal fluctuations, with Q1 and Q4 experiencing higher values. This pattern suggests that promotions or seasonal demand are influencing shopping behavior, guiding marketing strategies for these periods.
 
 [Cumulative Customer Growth:]{.underline}
 
-![Cumulative Customer Growth](images/cumulative_customers_2023.png){fig-align="center"}
+![Cumulative Customer Growth](images/cumulative_customers_2023.png){fig-align="center" width="405"}
 
 The 'Cumulative Customer Growth by Quarter' plot reveals a steady increase in our customer base. The consistent upward trajectory reflects successful marketing efforts and the growing appeal of our platform.
 
 [Age Distribution of Customers:]{.underline}
 
-![Age Distribution of Customers](images/customer_age_2023.png){fig-align="center"}
+![Age Distribution of Customers](images/customer_age_2023.png){fig-align="center" width="348"}
 
 The 'Age Distribution of Customers' histogram indicates a broad customer base, with noticeable concentrations around certain age groups. This diversity suggests that our products have a wide appeal, and also highlights key demographic segments for targeted marketing.
 
 [Monthly Sales Over Time:]{.underline}
 
-![Monthly Sales Over Time](images/monthly_sales_2023.png)
+![Monthly Sales Over Time](images/monthly_sales_2023.png){fig-align="center" width="419"}
 
 The 'Monthly Sales Over Time' line graph provides a dynamic view of sales performance, with peaks typically in Q4 each year, underscoring the impact of holiday seasons and possibly annual sales events.
 
 [Sales by Category:]{.underline}
 
-![Sales by Category](images/sales_by_categories_2023.png){fig-align="center"}
+![Sales by Category](images/sales_by_categories_2023.png){fig-align="center" width="359"}
 
 Significant insights come from the 'Sales (£) by Category, 2023' graph, showing that certain categories, like Books and Women's Clothing, are leading sales. This indicates product categories that could be prioritized for stock and promotional activities.
 
 [Top 10 Cities by Sales:]{.underline}
 
-![Top 10 Cities by Sales](images/top_cities_2023.png){fig-align="center"}
+![Top 10 Cities by Sales](images/top_cities_2023.png){fig-align="center" width="387"}
 
 In the 'Top 10 Cities by Sales (£), 2023', we observe that sales are concentrated in certain urban centers, suggesting areas where market penetration could be enhanced or where distribution networks might be optimized.
 
 [Average Rating by Category:]{.underline}
 
-![Average Rating by Category](images/top_rated_products_2023.png){fig-align="center"}
+![Average Rating by Category](images/top_rated_products_2023.png){fig-align="center" width="439"}
 
 Finally, the 'Average Rating by Category, 2023' plot illustrates customer satisfaction levels across different product categories, with some categories showing high ratings, which could inform inventory decisions and highlight areas for quality improvement.
 
 **Conclusion:**
 
 The analysed data presents a comprehensive view of the company's operations throughout the years and focuses on key figures in the year 2023. The insights provide a solid foundation for strategic planning, focusing on customer engagement, sales optimization, and product management for the upcoming year.
+
+# Appendix
+
+## Appendix 1 Relationship Sets
+
+![Relationship Sets](images/relationship_set.png){fig-align="center" width="368"}
 
 ------------------------------------------------------------------------

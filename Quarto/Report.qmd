@@ -7,7 +7,7 @@ editor: visual
 
 # Part 1: Database Design and Implementation
 
-## Part 1.2: E-R Diagram Design
+## Task 1.1: E-R Diagram Design
 
 We are basing our database design and workflows on a real-world e-commerce data environment, inspired by Amazon. The e-commerce company only uses its own courier.
 
@@ -35,7 +35,23 @@ The ER diagram is in 1^st^ normalised form.
 
 11. Each order may or may not have a delivery. One delivery is made for only one order.
 
+<<<<<<< HEAD
 ![Final ER Diagram](images/ER_Initial.drawio.png){fig-align="center"}
+=======
+![Final ER Diagram](images/ER_Initial.drawio.png){fig-align="center" width="529"}
+>>>>>>> 17eacce281bbfdbef578c3a1a37184852a8279bb
+
+Relationships between key entities are shown in Figure 2. We can tell that:
+
+1.  One-to-Many relationship: CUSTOMER and TRANSACTION, SUPPLIER and PRODUCT, CATEGORY and PRODUCT.
+
+2.  Many-to-Many relationship: CUSTOMER and PRODUCT
+
+3.  One-to-One relationship: TRANSACTION and DELIVERY, ADVERTISEMENT and Product
+
+4.  Recursive relationship: CATEGORY
+
+![Relationship Set](images/relationship_set.png){fig-align="center" width="348"}
 
 ## Task 1.2: SQL Database Schema Creation
 
@@ -89,7 +105,11 @@ In the database schema depicted in Figure 3, based on previous assumptions as we
 
 6.  The advertisement table presumes a singular, active advertisement per product with defined start and end dates, and an associated discount percentage. This discount is recorded as DECIMAL(6, 4) to ensure precision up to four decimal places.
 
+<<<<<<< HEAD
 ![Schema](images/Schema.png)
+=======
+![Table Schema](images/Schema.png){fig-align="center" width="353"}
+
 
 # Part 2: Data Generation and Management
 
